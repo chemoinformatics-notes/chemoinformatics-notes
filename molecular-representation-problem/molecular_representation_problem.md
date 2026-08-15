@@ -7,7 +7,7 @@ Any proper chemoinformatics project begins with a dataset containing at least tw
 The **first column** lists all $n$ entries (observations or molecules) measured in our experiment. Each molecule is associated with a starting representation—most commonly a **SMILES code** (we will return to the fact that a SMILES string is not always unique for a given molecule).
 
 
-The **second column** contains the **endpoint**, often referred to as the target variable or label in machine learning.     What is an Endpoint? An endpoint represents the biological or chemical property measured in an experiment. Common examples in chemoinformatics and bioinformatics include permeability (Papp A-to-B), activity (IC50), binding affinity ($K_d$, $K_i$), solubility, and lipophilicity ($\text{LogD}$). 
+The **second column** contains the **endpoint** values, often referred to as the target variable or label in machine learning.     What is an Endpoint? An endpoint represents the biological or chemical property measured in an experiment. Common examples in chemoinformatics and bioinformatics include permeability (Papp A-to-B), activity (IC50), binding affinity ($K_d$, $K_i$), solubility, and lipophilicity ($\text{LogD}$). 
 
 So, for every observation in the dataset, there is a corresponding endpoint value, and this can be **Categorical**: $y_i$ belongs to a discrete set of classes (e.g., active vs. inactive, high vs. low permeability) or **Continuous**: $y_i$ spans a continuous space of real numbers ($y_i \in \mathbb{R}$).
 

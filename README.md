@@ -1,16 +1,36 @@
 ## Hi there 👋
 
-<!--
-**chemoinformatics-notes/chemoinformatics-notes** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Chemoinformatics: What I've Understood So Far
 
-Here are some ideas to get you started:
+> Notes (a lot), concepts on chemoinformatics, machine learning and computational chemistry.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## About
+
+This repository is my personal collection of notes on topics I am learning and trying to understand in more depth.
+
+I use it to write down concepts, mathematical foundations, coding experiments, and ideas related to:
+
+- 🤖 Machine Learning
+- 🧪 Chemoinformatics
+- ⚛️ Computational Chemistry
+- 🧮 Mathematics and Statistics
+- 🐍 "Real world" applications (hopefully)
+
+It is simply a record of **what I have understood so far**.
+
+
+## Notes
+
+### Chemoinformatics
+- Chemoinformatics 101: "QSAR pipeline and the problem of molecular representation"
+
+
+## Disclaimer
+
+These notes represent my understanding at a given point in time.
+
+They are not intended to be authoritative or exhaustive. If you find something that is incorrect or could be explained better, feel free to open an issue or suggest a correction.
+
+---
+
+*Learning in public, one concept at a time.*

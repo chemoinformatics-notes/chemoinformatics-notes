@@ -50,9 +50,9 @@ Now, we need to introduce a way of thinking that is very useful in chemoinformat
 Computers love vectors; humans (me especially) a little bit less. 
 In the context of 2D numerical descriptors, for example, we can represent a molecule as a vector in the space of the variables (chemical space). 
 
-Let's look at an example below. 
+
 <img width="563" height="397" alt="molecule_as_vector" src="https://github.com/user-attachments/assets/3c6e7fdf-39f7-4573-91cf-2b85ecdbc5a5" />
 
-
+Let's look at an example above. 
 
 

@@ -1,2 +1,11 @@
-Today, I would like to discuss what I call "the problem of molecular representation" in chemoinformatics.
+### The problem of molecular representation
+
+Here is the table showing the SMILES strings alongside their corresponding molecular structures and properties:
+
+![SMILES Output Table](table_smile_output.png)
+
+*Figure 1: C
+
+#### Observations & Discussion
+
 

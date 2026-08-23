@@ -87,6 +87,6 @@ As humans, with our chemical knowledge, we can look at a set of n molecules and 
 
 Let's look at an example below.
 
-![Similarity between molecules](_posts/2026-08-15/similarity_molecules.png)
+![Similarity between molecules](../_posts/2026-08-15/similarity_molecules.png)
 
 

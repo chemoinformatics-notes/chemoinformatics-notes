@@ -102,11 +102,21 @@ As a first step, we need to choose a set of molecular descriptors that we will u
 We can then calculate the value of each descriptor for each molecule. Each molecule can therefore be represented as a point in the corresponding three-dimensional Euclidean feature space, or equivalently as a three-component feature vector (as seen before): xi = (MW, TPSA, cLogP).
 
 
-In this representation, the structural information of the molecules has been transformed into a numerical representation in chemical feature space. Molecules that have similar values for these descriptors will be located close to one another in this space, whereas molecules with more different descriptor values will tend to be farther apart.
+In this representation, the structural information of the molecules has been transformed into a numerical representation in chemical feature space. Molecules that have similar values for **these descriptors** will be located close to one another in this space, whereas molecules with more different descriptor values will tend to be farther apart. We should be careful that the description of similarity is totally dependent on the type of variables we use to describe the molecules (let's see the example).
 
-This gives us a first mathematical way of formalizing molecular similarity: instead of comparing molecules directly as graphs of atoms and bonds, we can compare the corresponding vectors in a multidimensional feature space.
+After computing the values of the three variables using RDKit for the three structurally related molecules, let's look at them in the space defined by these three variables (MW, cLogP, and TPSA).
 
 ![Vector representation between methylxatine](../_posts/2026-08-15/vector_representation_methylxantines.png)
 
+The first thing that jumps out immediately is that theophylline and theobromine — which are positional isomers, i.e., molecules that differ only in the position of a methyl group — show the same value for all three variables. The identical MW is expected, since isomers by definition share the same molecular formula. But the fact that the other two variables, which are physicochemical descriptors, also come out identical is more revealing.
 
+From what I understand, the reason is that these descriptors are purely additive: the software computes them by considering only atom types. As a result, the two molecules effectively "end up," "collapse," at the same point in Euclidean space, which makes these particular variables a suboptimal choice for telling the two molecules apart structurally — and that actually makes perfect sense, since these are physicochemical parameters, not structural ones.
+
+The difference does show up, however, between caffeine and theophylline/theobromine, and it can be explained rationally. 
+
+Caffeine, as mentioned, is a trimethylxanthine, and indeed, having one extra methyl group, it also shows a higher MW. Furthermore, being methylated, it shows a lower TPSA (topological polar surface area): the methyl group that caffeine carries on its imidazole nitrogen replaces a hydrogen that, in theophylline, is a free N-H acting as an HBD (hydrogen-bond donor), which makes the molecule more polar. This also explains caffeine's less negative cLogP value: the molecule partitions more readily into the octanol phase, being more nonpolar, and this is exactly what the calculation captures.
+
+So we've established that we can always convert a structure (i.e., a graph) into a vector using specific variables — but we've also seen that these variables aren't always capable of capturing subtle differences, such as those between positional isomers.
+
+One question remains: can we use this structural representation to compute similarity?
 

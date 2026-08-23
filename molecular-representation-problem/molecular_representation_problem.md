@@ -1,5 +1,5 @@
 
-Getting Started: The Structure of a Chemoinformatics Dataset. 
+**Getting Started: The Structure of a Chemoinformatics Dataset** 
 
 Before diving into the details of molecular representation and how computers interpret chemical structures, let’s take a look at the image below.
 Any proper chemoinformatics project begins with a dataset containing at least two colums.

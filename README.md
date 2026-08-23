@@ -22,7 +22,7 @@ It is simply a record of **what I have understood so far**.
 ## Notes
 
 ### Chemoinformatics
-- Chemoinformatics 101: "QSAR pipeline and the problem of molecular representation"
+- Chemoinformatics 101: "The problem of molecular representation and the concept of variables"
 
 
 ## Disclaimer

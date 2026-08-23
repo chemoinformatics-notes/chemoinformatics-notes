@@ -53,6 +53,38 @@ In the context of 2D numerical descriptors, for example, we can represent a mole
 
 <img width="563" height="397" alt="molecule_as_vector" src="https://github.com/user-attachments/assets/3c6e7fdf-39f7-4573-91cf-2b85ecdbc5a5" />
 
-Let's look at an example above. 
+Let's look at the example above. 
+
+Consider a generic molecule i described in a three-dimensional chemical property space, where the three dimensions correspond to molecular weight (MW), topological polar surface area (TPSA), and cLogP, for example. 
+
+In this representation, the molecule is not described explicitly by its atomic structure and connectivity. Instead, it is represented as a point in a three-dimensional Euclidean feature (variable) space. 
+
+Mathematically, this point can be represented by a three-dimensional feature vector: xi = (MW, cLogP, TPSA).
+
+Each component of the vector corresponds to the molecule's coordinate along one of the axes (features, variables) of the chemical space. 
+
+More precisely, each coordinate can be obtained by projecting the vector onto the corresponding axis.
+
+Therefore, the magnitude of a given component reflects the value that the molecule has for that particular molecular property (variable)
+
+In this way, a molecular structure can be transformed into a numerical representation in feature space, allowing molecules to be compared (via similarity) or used as inputs for an ML model. 
+
+In the example above, molecule i has been represented as a 3D vector, because we used three variables to describe it. In practice, however, we usually use many more than three variables.
+
+More generally, we can consider a generic molecule i as a point in a p-dimensional coordinate space, denoted by R^p.
+
+When the number of dimensions is greater than three, we can no longer visualize the molecule as a vector in a conventional graphical representation. However, the underlying concept remains the same.
+
+The molecule is represented as a p-dimensional feature vector.
+
+**Why complicate things this way?**
+
+Why convert a molecule, with its atoms and bonds, into a vector in a multidimensional space? The main reason is that this is a much more convenient formalism for a computer to work with.
+
+But there is more to it. This representation allows the computer — and therefore us — to compute properties such as the similarity between two molecules using their vector representations.
+
+As humans, with our chemical knowledge, we can look at a set of n molecules and intuitively understand which ones are structurally more similar. For a computer, however, this can be done by computing the distance (or similarity) between the corresponding vectors.
+
+Let's look at an example.
 
 

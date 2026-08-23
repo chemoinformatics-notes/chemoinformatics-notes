@@ -89,4 +89,22 @@ Let's look at an example below.
 
 ![Similarity between molecules](../_posts/2026-08-15/similarity_molecules.png)
 
+In the image above, three structural analogues are represented, i.e., molecules that share the same core structure and differ only through relatively minor structural modifications. In this particular example, the three molecules are methylxanthines: caffeine, theophylline, and theobromine.
+
+All three compounds share the same xanthine scaffold: a fused bicyclic heterocycle composed of a pyrimidine-2,6-dione ring (the oxidized version of a pyrimidine) fused to an imidazole ring. The pyrimidine-2,6-dione ring contains two nitrogen atoms and two carbonyl groups, while the imidazole ring contains two nitrogen atoms.
+
+The three molecules differ in their N-methylation pattern. Caffeine is 1,3,7-trimethylxanthine, meaning three nitrogen atoms bear methyl groups. Theophylline and theobromine are both dimethylxanthines, but they differ in which nitrogen atoms are methylated: theophylline is 1,3-dimethylxanthine, whereas theobromine is 3,7-dimethylxanthine.
+
+The question is: how can we formalize this structural similarity using the vector formalism introduced above?
+
+As a first step, we need to choose a set of molecular descriptors that we will use to represent our molecules. For simplicity, we will use the same three descriptors introduced above: molecular weight (MW), topological polar surface area (TPSA), and cLogP. Using three descriptors is convenient here because it allows us to visualize the molecules in a three-dimensional feature space.
+
+We can then calculate the value of each descriptor for each molecule. Each molecule can therefore be represented as a point in the corresponding three-dimensional Euclidean feature space, or equivalently as a three-component feature vector (as seen before): xi = (MW, TPSA, cLogP).
+
+
+In this representation, the structural information of the molecules has been transformed into a numerical representation in chemical feature space. Molecules that have similar values for these descriptors will be located close to one another in this space, whereas molecules with more different descriptor values will tend to be farther apart.
+
+This gives us a first mathematical way of formalizing molecular similarity: instead of comparing molecules directly as graphs of atoms and bonds, we can compare the corresponding vectors in a multidimensional feature space.
+
+
 

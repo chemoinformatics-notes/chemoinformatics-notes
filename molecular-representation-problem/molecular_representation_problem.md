@@ -106,5 +106,7 @@ In this representation, the structural information of the molecules has been tra
 
 This gives us a first mathematical way of formalizing molecular similarity: instead of comparing molecules directly as graphs of atoms and bonds, we can compare the corresponding vectors in a multidimensional feature space.
 
+![Vector representation between methylxatine](../_posts/2026-08-15/vector_representation_methylxantines.png)
+
 
 
